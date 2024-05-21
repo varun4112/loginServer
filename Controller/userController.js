@@ -35,7 +35,6 @@ exports.login = async (req, res) => {
       res.status(200).json({ existingUser, token });
     } else {
       res.status(401).json(`User not found`);
-      
     }
   } catch (err) {
     res.status(401).json(`login api failed, Error:${err}`);

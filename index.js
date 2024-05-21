@@ -38,4 +38,4 @@ app.use((err, req, res, next) => {
   res.status(500).send("Something broke!");
 });
 
-module.exports = app; // Export the app for testing or other purposes
+module.exports = app;
